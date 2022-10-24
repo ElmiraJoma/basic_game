@@ -1,0 +1,39 @@
+print("Hello, welcome to trivia!")
+ans = input("Are you ready to play?(yes/no):")
+score = 0
+total_q = 4
+
+if ans.lower() == "yes":
+    ans = input ("1.Which solar system is closest to earth?")
+    if ans.lower() =="alpha centauri":
+        score +=1
+        print("Correct")
+    else:
+        print("Incorrect")
+        
+    ans = input ("2.Which is the closest planet to the sun?")
+    if ans.lower() =="mercury":
+        score +=1
+        print("Correct")
+    else:
+        print("Incorrect")  
+        
+    ans = input ("3.What is better a 1050ti or a 1060 (graphics card)?")
+    if ans.lower() =="1050ti":
+        score +=1
+        print("Correct")
+    else:
+        print("Incorrect")     
+        
+    ans = input ("4.What is 2 + 8 + 9 - 1 ?")
+    if ans.lower () =="18":
+        score +=1
+        print("Correct")
+    else:
+        print("Incorrect")   
+        
+print("Thank you for playing, you got",score, "questions correct." )
+mark = (score/total_q) *100 
+
+print("Mark: ",mark)
+print("Goodbye")
